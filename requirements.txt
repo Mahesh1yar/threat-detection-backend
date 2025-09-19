@@ -3,10 +3,11 @@ uvicorn==0.30.1
 pydantic==2.9.0
 python-multipart==0.0.9
 
-# HuggingFace
-tokenizers==0.19.1   # prebuilt wheel, avoids Rust build
+# HuggingFace (prebuilt wheels only)
 transformers==4.44.2
+tokenizers==0.19.1   # prebuilt wheel
 safetensors==0.6.2
 
-# PyTorch (with prebuilt wheel)
-torch==2.3.1
+# PyTorch (prebuilt wheel for CPU)
+torch==2.3.1+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
