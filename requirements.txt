@@ -2,5 +2,11 @@ fastapi==0.115.0
 uvicorn==0.30.1
 pydantic==2.9.0
 python-multipart==0.0.9
+
+# HuggingFace
+tokenizers==0.19.1   # prebuilt wheel, avoids Rust build
 transformers==4.44.2
-torch
+safetensors==0.6.2
+
+# PyTorch (with prebuilt wheel)
+torch==2.3.1
